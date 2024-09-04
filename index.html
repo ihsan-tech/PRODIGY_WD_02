@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopWatch</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="maincontainer">
+        <div id="wrapper">
+            <span id="sec">00</span>
+            <span>:</span>
+            <span id="ms">00</span>
+        </div>
+        <div id="buttons">
+            <button id="start" bg-color="red">Start</button>
+            <button id="stop">Stop</button>
+            <button id="reset">Reset</button>
+            <button id="laps">Lap</button>
+        </div>
+    </div>
+    <div id="particles-js"></div>
+</body>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> 
+    <script src="index.js"></script>
+    <script src="particles.js"></script>
+    <script>
+        /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+        particlesJS.load('particles-js', 'particles.json', function() {
+        console.log('callback - particles.js config loaded');
+        });
+    </script>
+</html>
